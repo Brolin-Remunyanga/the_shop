@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/bootstrap/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/signup.css">
+</head>
+<body class="container">
+    <header class="d-flex justify-content-center py-3 mb-4 border-success border-bottom">
+        <a href="../index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none logo">
+            <span class="fs-4">The Shop</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item p-1"><a href="../products/products_index.php" class="nav-link text-dark">Products</a></li>
+            <li class="nav-item p-1"><a href="../static_pages/contact.html" class="nav-link text-dark">Contact us</a></li>
+            <li class="nav-item p-1"><a href="../static_pages/about.html" class="nav-link text-dark">About us</a></li>
+            <li class="nav-item p-1"><a href="../login/login.html" class="nav-link bg-primary text-white" aria-current="page">Log in</a></li>
+            <li class="nav-item p-1"><a href="../registration/signup.html" class="nav-link bg-warning text-white" aria-current="page">Sign up</a></li>
+        </ul>
+    </header>
+
+    <main class="container body form-signin g-5">
+        <div class="col-md-7 col-lg-8 m-0 p-0">
+            <h4 class="m-0 text-center">Sign up here</h4>
+            <form action="./logic/register.php" method="post">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" name="firstName" placeholder="" required>
+                    </div>
+  
+                    <div class="col-12">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" name="lastName" required>
+                    </div>
+  
+                    <div class="col-12">
+                        <label for="username" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control" name="username" required>
+                        </div>
+                    </div>
+  
+                    <div class="col-12">
+                        <label for="address" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" required>
+                    </div>
+  
+                    <div class="col-12">
+                        <label for="address2" class="form-label">Password confirmation</label>
+                        <input type="password" class="form-control" name="passwordConfirmation" required>
+                    </div>
+  
+                    <button class="w-100 btn btn-success btn-lg" type="submit">Sign up</button>
+                    <p class="text-center mb-3 text-muted">Already have an account? <a href="../login/login.html">Log in</a>.</p>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
